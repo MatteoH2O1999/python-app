@@ -119,7 +119,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r ./requirements.txt -r requirements-dev.txt
       - name: Download executables
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           path: ./dist
       - name: Zip assets
